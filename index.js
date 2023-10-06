@@ -44,6 +44,12 @@ const questions = [
     },
     {
         type: "input",
+        name: "test",
+        message: "How should a user run a test?",
+        default: "npm test"
+    },
+    {
+        type: "input",
         name: "issues",
         message: "How should a user report an issue with your application?"
     },
@@ -63,9 +69,8 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then((response) => {
         console.log("Generating README...");
-    }
-    
-    )
+        writeToFile("README.md", generateMarkdown({...response}))
+    });
 
 }
 
