@@ -7,8 +7,24 @@ function renderLicenseBadge (license) {
 }
 
 function generateMarkdown(data) {
+  console.log(data);
   return `# ${data.projectName}
   ${renderLicenseBadge(data.license)}`;
 }
+
+### Description
+
+${data.description}
+
+### Table of Contents
+
+*[Installation](#installation)
+
+*[Usage](#usage)
+*[Contribute](#contribute)
+*[Test](#test)
+*[License](#license)
+
+//22mins
 
 module.exports = generateMarkdown;
