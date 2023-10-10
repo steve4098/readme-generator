@@ -87,7 +87,12 @@ function generateMarkdown(data) {
   ${data.issues}
   \`\`\`
 
+ 
+
  #### You can find more of my work at: [${data.github}](https://github.com/${data.github})
+
+ A walkthrough video demonstrating the creation of a ReadMe using this application can be found at:
+ https://watch.screencastify.com/v/woz56UeCpQCu8ZhO2HVQ
 
 `}
   module.exports = generateMarkdown;
