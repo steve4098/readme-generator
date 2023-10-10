@@ -53,7 +53,29 @@ function generateMarkdown(data) {
 
   ${data.usage}
 
-  
+  ## License
+
+  This project uses the following license:
+
+  ${data.license}
+
+  ## Contribute
+
+  If you wish to contribute to this project, follow this procedure:
+
+  ${data.contribute}
+
+  ## Test
+
+  To run a test, follow these instructions:
+
+  ${data.test}
+
+  ## Issues
+
+  To report any issues, follow these steps:
+
+  ${data.issues}
 
 
 
