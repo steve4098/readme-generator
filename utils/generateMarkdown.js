@@ -8,7 +8,7 @@ function renderLicenseBadge (license) {
 
 const renderLicenseLink = (license) => {
   if(license !== "none") {
-    return `\n* [License](#license)\n`
+    return `[License](#license)\n`
 }
 return ""};
 
@@ -28,18 +28,17 @@ function generateMarkdown(data) {
 
   ### Table of Contents;
 
-  * [Installation](#installation)
+ * [Installation](#installation)
 
-  * [Usage](#usage)
+ * [Usage](#usage)
 
-  ${renderLicenseLink(data.license)}
+ * ${renderLicenseLink(data.license)}
 
+ * [Contribute](#contribute)
 
-  * [Contribute](#contribute)
+ * [Test](#test)
 
-  * [Test](#test)
-
-  * [License](#license)
+ * [Issues](#issues)
 
   ## Installation
 
@@ -54,8 +53,10 @@ function generateMarkdown(data) {
 
   ${data.usage}
 
+  
 
 
 
+`}
   module.exports = generateMarkdown;
-  `}
+  
