@@ -24,7 +24,7 @@ const questions = [
         type: "list",
         name: "license",
         message: "What type of license is your project using?",
-        choices: ["MIT","APACHE v2.0","GNU General Public License v3.0", "Creative Commons Zero v1.0", "Eclipse Public License 2.0", "None"]
+        choices: ["MIT","APACHE-v2.0","GNU-General-Public-License-v3.0", "Creative-Commons-Zero-v1.0", "Eclipse-Public-License-2.0", "None"]
     },
     {
         type: "input",
