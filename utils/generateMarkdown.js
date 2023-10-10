@@ -6,7 +6,7 @@ function renderLicenseBadge (license) {
   } else {return ""};
 }
 
-function renderLicenseLink = (license) => {
+const renderLicenseLink = (license) => {
   if(license !== "none") {
     return `\n* [License](#license)\n`
 }
