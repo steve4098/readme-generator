@@ -72,5 +72,8 @@
   Either contact me through Github or email me at steve4098coding@gmail.com
   ```
 
+A walkthrough video demonstrating the creation of a ReadMe using this application can be found at:
+ https://watch.screencastify.com/v/woz56UeCpQCu8ZhO2HVQ
+
  #### You can find more of my work at: [steve4098](https://github.com/steve4098)
 
