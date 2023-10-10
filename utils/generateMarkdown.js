@@ -15,26 +15,47 @@ return ""};
 function generateMarkdown(data) {
   console.log(data);
   return `# ${data.projectName}
-  ${renderLicenseBadge(data.license)}`;
-};
-
-    ### Description
-
-    ${data.description}
-
-    ### Table of Contents
-
-*[Installation](#installation)
-
-*[Usage](#usage)
-
-${renderLicenseLink(data.license)}
-
-
-*[Contribute](#contribute)
-*[Test](#test)
-*[License](#license)
+  ${renderLicenseBadge(data.license)}
 
 
 
-module.exports = generateMarkdown;
+
+  ### Description;
+
+  ${data.description}
+
+
+
+  ### Table of Contents;
+
+  * [Installation](#installation)
+
+  * [Usage](#usage)
+
+  ${renderLicenseLink(data.license)}
+
+
+  * [Contribute](#contribute)
+
+  * [Test](#test)
+
+  * [License](#license)
+
+  ## Installation
+
+
+  To install necessary dependencies, run the following command:
+
+  \`\`\`
+  ${data.installation}
+  \`\`\`
+
+  ## Usage
+
+  ${data.usage}
+
+
+
+
+  module.exports = generateMarkdown;
+  `}
