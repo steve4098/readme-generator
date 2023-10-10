@@ -6,25 +6,35 @@ function renderLicenseBadge (license) {
   } else {return ""};
 }
 
+function renderLicenseLink = (license) => {
+  if(license !== "none") {
+    return `\n* [License](#license)\n`
+}
+return ""};
+
 function generateMarkdown(data) {
   console.log(data);
   return `# ${data.projectName}
   ${renderLicenseBadge(data.license)}`;
-}
+};
 
-### Description
+    ### Description
 
-${data.description}
+    ${data.description}
 
-### Table of Contents
+    ### Table of Contents
 
 *[Installation](#installation)
 
 *[Usage](#usage)
+
+${renderLicenseLink(data.license)}
+
+
 *[Contribute](#contribute)
 *[Test](#test)
 *[License](#license)
 
-//22mins
+
 
 module.exports = generateMarkdown;
